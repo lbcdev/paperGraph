@@ -1,0 +1,290 @@
+
+/* 
+.param  {
+	display: flex;
+}
+ */
+
+html{
+ 	width:100%;
+    height:100%;
+}
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+ 
+body{
+	background-color: white;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width:100%;
+    height:100%;
+    font-size:14px;
+}
+
+h4 {
+	padding-top: 10px;
+}
+
+p {
+	font-size: 14px;
+}
+/* 
+#blur{
+	margin-left: auto;
+	margin-right: auto;
+	width:70%;
+	height:100%;
+	background-color: gray;
+	z-index: -1;
+}
+ */
+.header {
+	position: relative;
+	left:20%;
+	font-size: 14px;
+}	
+
+
+.main{
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	padding:0px;
+	width:65%;
+	height:100%;
+	background-color: #f2f2f2;
+}
+
+.main * {
+/* margin-right:10px; */
+}
+
+LEGEND{
+	margin: 0px;
+}
+
+.content{
+	padding:20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	background-color: #f2f2f2
+}
+
+/* Manual scan page */
+
+.chartbox {
+	width: 100%;
+	height: 100%;
+}
+
+.chartbox .dataset{
+	margin-left: 10px;
+    float: left;
+	width: 47%;
+	height: 300px;
+	background-color: white;
+	margin-bottom: 10px;
+}
+.chartdiv {
+	margin-left: 10px;
+	float: left;
+	width: 47%;
+	height: 300px;
+	background-color: white;
+	margin-bottom: 10px;
+}
+
+.chartdiv h5{
+	font-size: 12px;
+	margin: 0px;
+	margin-left: 10px;
+	margin-top: 15px;
+}
+.chart {
+	height: 250px;
+}
+
+
+.bfscan{
+    float: left;
+	width: 45%;
+	background-color: #f2f2f2;
+	padding: 10px;
+	border:1px solid white;
+}
+
+.bfscan:hover{
+	border:1px solid gray;
+	cursor: pointer;
+} 
+.dataset *{
+	font-size: 12px;
+	margin: 0px;
+	margin-left: 10px;
+	margin-top: 15px;
+}
+.dataset p{
+	margin: 8px;	
+}
+
+
+
+/* Manual scan page */
+
+.schebtn{
+    background-color: #213238; /* navy blue */
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    top : 5px;
+/* 
+    left: 10px;
+ */
+    position: relative;
+    text-align: center;
+}
+
+.submitbtn{
+    background-color: #213238; /* navy blue */
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    top : 5px;
+    left: -325px;
+    
+    position: relative;
+    text-align: center;
+}
+
+.scanbtn {
+    background-color: #213238; /* navy blue */
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    top : 5px;
+        
+    text-align: center;
+}
+/* button styling */
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px; /* demo only */
+  
+}
+
+.custom-dropdown select {
+  background-color: #808080;
+  color:  #fff;
+  font-size: inherit;
+  padding: .5em;
+  padding-right: 2.5em;	
+  border: 0;
+  margin: 0;
+  border-radius: 3px;
+  text-indent: 0.01px;
+  text-overflow: '';
+  opacity: 0.4;
+    filter: alpha(opacity=50);
+  -webkit-appearance: button; /* hide default arrow in chrome OSX */
+ 
+}
+
+.custom-dropdown::before,
+.custom-dropdown::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.custom-dropdown::after { /*  Custom dropdown arrow */
+  content: "\25BC";
+  height: 2em;
+  font-size: .625em;
+  line-height: 1;
+  right: 1.2em;
+  top: 50%;
+
+
+}
+
+.custom-dropdown::before { /*  Custom dropdown arrow cover */
+  width: 2em;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0 3px 3px 0;
+  
+}
+
+.custom-dropdown select[disabled] {
+  color: rgba(0,0,0,.3);
+}
+
+.custom-dropdown select[disabled]::after {
+  color: rgba(0,0,0,.1);
+}
+
+.custom-dropdown::before {
+  background-color: rgba(0,0,0,.15);
+}
+
+.custom-dropdown::after {
+  color: rgba(0,0,0,.4);
+}
+/* button styling */
+.param span {
+	margin-left: 10px;
+	margin-right: 10px;}
+
+.param input {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#ibmicon {
+	height: 50px;
+}
+
+table {
+	font-size: 13px;
+	font-family: Calibri, Arial;
+	font-weight: 100;
+}
+
+.loading {
+	position: absolute;
+	left: 40%;
+	top: 40%;
+	z-index: 1;
+	height: 140px;
+	width: 280px
+}
+
+.loading img{
+	height: 140px;
+	width: 280px
+}

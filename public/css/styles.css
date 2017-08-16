@@ -1,0 +1,696 @@
+
+/* 
+.param  {
+	display: flex;
+}
+ */
+
+html{
+ 	width:100%;
+    height:100%;
+}
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body{
+	background-color: white;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width:100%;
+    height:100%;
+    font-size:14px;
+}
+
+h4 {
+ padding-top: 10px;
+}
+
+
+.h2 {
+  position: absolute; 
+   top: 185px; 
+   left: 170px; 
+ 
+}
+h2 span { 
+   color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.4);
+   padding: 10px; 
+   position: absolute; 
+   
+    top: 315px; 
+   left: 570px; 
+}
+.h3 {
+  position: absolute; 
+   top: 210px; 
+   left: 130px; 
+ 
+}
+h3 span { 
+   color: white; 
+   font: bold 14px/15px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 5px; 
+   position: absolute; 
+   
+    top: 340px; 
+   left: 180px; 
+}
+.h6 {
+  position: absolute; 
+   top: 210px; 
+   left: 1060px; 
+ 
+}
+h6 span { 
+   color: white; 
+   font: bold 14px/15px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 5px; 
+   position: absolute; 
+   
+    top: 210px; 
+   left: 1100px; 
+}
+.h5 {
+  position: absolute; 
+   top: 210px; 
+   left: 1060px; 
+ 
+}
+h5 span { 
+   color: white; 
+   font: bold 14px/15px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 5px; 
+   position: absolute; 
+   
+    top: 520px; 
+   left: 650px; 
+}
+.h8 {
+  position: absolute; 
+   top: 185px; 
+   left: 670px; 
+ 
+}
+ 
+h8 span { 
+   color: white; 
+   font: bold 14px/15px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 5px; 
+   position: absolute; 
+   
+    top: 315px; 
+   left: 830px; 
+}
+
+.h7 {
+  position: absolute; 
+   top: 185px; 
+   left: px; 
+ 
+}
+ 
+h7 span { 
+   color: white; 
+   font: bold 14px/15px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 5px; 
+   position: absolute; 
+   
+    top: 175px; 
+   left: 450px; 
+}
+
+.h9 {
+  position: absolute; 
+   top: 185px; 
+   left: px; 
+ 
+}
+ 
+h9 span { 
+   color: white; 
+   font: bold 14px/15px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 5px; 
+   position: absolute; 
+   
+    top: 155px; 
+   left: 750px; 
+}
+.reddot{
+
+    width:106px;
+    height:106px;
+    position:absolute
+}
+
+
+.locater{
+position: absolute;
+top: 230px;
+left: 180px;
+}
+
+.locater2{
+position: absolute;
+top: 280px;
+left: 170px;
+}
+.locater3{
+position: absolute;
+top: 360px;
+left: 235px;
+}
+.locater4{
+position: absolute;
+top: 160px;
+left: 1090px;
+cursor: pointer;
+}
+.locater5{
+position: absolute;
+top: 210px;
+left: 1130px;
+}
+.locater6{
+position: absolute;
+top: 200px;
+left: 1060px;
+}
+.locater7{
+position: absolute;
+top: 490px;
+left: 620px;
+}
+.locater8{
+position: absolute;
+top: 470px;
+left: 640px;
+}
+.locater9{
+position: absolute;
+top: 550px;
+left: 660px;
+}
+.locater10{
+position: absolute;
+top: 260px;
+left: 830px;
+}
+.locater11{
+position: absolute;
+top: 320px;
+left: 850px;
+}
+.locater12{
+position: absolute;
+top: 115px;
+left: 450px;
+}
+.locater13{
+position: absolute;
+top: 165px;
+left: 720px;
+}
+.locater14{
+position: absolute;
+top: 125px;
+left: 700px;
+}
+
+.mark{
+    fill: none;
+stroke: #FF9100;
+stroke-width: 1px;
+cursor: pointer;
+z-index: 1000;
+}
+
+.locations {
+position: relative;
+  left: 10%;
+  top: 50%;
+}
+
+p {
+	font-size: 14px;
+}
+/* 
+#blur{
+	margin-left: auto;
+	margin-right: auto;
+	width:70%;
+	height:100%;
+	background-color: gray;
+	z-index: -1;
+}
+ */
+.header {
+	padding-left: 25px;
+	position: relative;
+	left:22%;
+	font-size: 16px;
+}	
+
+
+.main{
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	padding:0px;
+	width:65%;
+	height:100%;
+	background-color: #f2f2f2;
+}
+
+.main * {
+/* margin-right:10px; */
+}
+
+LEGEND{
+	margin: 0px;
+}
+
+.content{
+	padding:20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	background-color: #f2f2f2
+}
+
+/* Manual scan page */
+
+.chartbox {
+	width: 100%;
+	height: 100%;
+}
+
+.chartbox .dataset{
+	margin-left: 10px;
+    float: left;
+	width: 47%;
+	height: 325px;
+	background-color: white;
+	margin-bottom: 10px;
+}
+.chartdiv {
+	margin-left: 10px;
+	float: left;
+	width: 47%;
+	height: 325px;
+	background-color: white;
+	margin-bottom: 10px;
+}
+
+.chartdiv h5{
+	font-size: 12px;
+	margin: 0px;
+	margin-left: 10px;
+	margin-top: 15px;
+}
+.chart {
+	height: 250px;
+}
+
+.bfscan{
+    float: left;
+	width: 45%;
+	background-color: #f2f2f2;
+	padding: 5px;
+	border:1px solid white;
+}
+
+.bfscan:hover{
+	border:1px solid gray;
+	cursor: pointer;
+} 
+.dataset *{
+	font-size: 12px;
+	margin: 0px;
+	margin-left: 10px;
+	margin-top: 15px;
+}
+.dataset p{
+	margin: 5px;	
+}
+
+
+
+/* Manual scan page */
+
+.schebtn{
+    background-color: #213238; /* navy blue */
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    top : 5px;
+/* 
+    left: 10px;
+ */
+    position: relative;
+    text-align: center;
+}
+
+.submitbtn{
+    background-color: #213238; /* navy blue */
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    top : 5px;
+    left: -325px;
+    
+    position: relative;
+    text-align: center;
+}
+
+.scanbtn {
+    background-color: #213238; /* navy blue */
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    top : 5px;    
+    text-align: center;
+}
+
+
+.btnclose {
+    background-color: gray; /* navy blue */
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    top : 5px;    
+    text-align: center;
+}
+
+.btnemail {
+    background-color: #213238; /* navy blue */
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    top : 5px;    
+    text-align: center;
+}
+
+
+.btnact {
+    background-color: red; /* navy blue */
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    top : 5px;    
+    text-align: center;
+}
+/* button styling */
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px; /* demo only */
+  
+}
+
+.custom-dropdown select {
+  background-color: #808080;
+  color:  #fff;
+  font-size: inherit;
+  padding: .5em;
+  padding-right: 2.5em;	
+  border: 0;
+  margin: 0;
+  border-radius: 3px;
+  text-indent: 0.01px;
+  text-overflow: '';
+  opacity: 0.4;
+    filter: alpha(opacity=50);
+  -webkit-appearance: button; /* hide default arrow in chrome OSX */
+ 
+}
+
+.custom-dropdown::before,
+.custom-dropdown::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.custom-dropdown::after { /*  Custom dropdown arrow */
+  content: "\25BC";
+  height: 2em;
+  font-size: .625em;
+  line-height: 1;
+  right: 1.2em;
+  top: 50%;
+
+
+}
+
+.custom-dropdown::before { /*  Custom dropdown arrow cover */
+  width: 2em;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0 3px 3px 0;
+  
+}
+
+.custom-dropdown select[disabled] {
+  color: rgba(0,0,0,.3);
+}
+
+.custom-dropdown select[disabled]::after {
+  color: rgba(0,0,0,.1);
+}
+
+.custom-dropdown::before {
+  background-color: rgba(0,0,0,.15);
+}
+
+.custom-dropdown::after {
+  color: rgba(0,0,0,.4);
+}
+/* button styling */
+.param span {
+	margin-left: 10px;
+	margin-right: 10px;}
+
+.param input {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#ibmicon {
+	height: 50px;
+}
+
+table {
+	font-size: 13px;
+	font-family: Calibri, Arial;
+	font-weight: 100;
+}
+
+.loading {
+	position: absolute;
+	left: 40%;
+	top: 40%;
+	z-index: 1;
+	height: 140px;
+	width: 280px
+}
+
+.loading img{
+	height: 140px;
+	width: 280px
+}
+
+/* For map */
+.nss{
+ font-size: 22px;
+ font-weight: bold;
+ color: #000080 ;
+}
+.somers{
+ font-size: 18px;
+ font-weight: bold;
+ color: #008000 ;
+}
+.checkbox {
+ font-size: 16px;
+ font-weight: bold;
+}
+
+.popup {
+   position: absolute;
+   left: 40%;
+   top: 40%;
+   z-index: 1;
+   height: 240px;
+   width: 320px;
+   background-color: #f2f2f2  ;
+   opacity: 0.8;
+   padding: 15px;
+ filter: alpha(opacity=60);
+ border: 1px solid black;
+}
+
+
+.aggpopup {
+	position: absolute;
+	font-size: 14px;
+	left: 40%;
+	top: 40%;
+	z-index: 1;
+	height: 320px;
+	width: 320px;
+	background-color: #f2f2f2;
+	border: 1px solid black;
+}
+
+.aggpopup * {
+	margin-left: 15px;
+}
+.aggpopup img{
+	width: 25px;
+	height: 25px;
+	margin:0px;
+}
+
+.nss{
+font-size: 22px;
+font-weight: bold;
+color: #000080  ;
+}
+.somers{
+font-size: 18px;
+font-weight: bold;
+color: #008000  ;
+}
+.all {
+font-size: 16px;
+font-weight: bold;
+}
+.select {
+font-size: 14px;
+font-weight: bold;
+
+}
+table.mapping {
+width: 100%;
+}
+
+
+table.mapping th {
+border: 1px solid black;
+border-spacing: 10px 20px;
+border-collapse: separate;
+text-align: center;
+}
+table.mapping td {
+border: 1px solid black;
+border-spacing: 10px 50px;
+border-collapse: separate;
+padding: 6px;
+text-align: center;
+}
+
+.popup {
+   position: absolute;
+   left: 40%;
+   top: 25%;
+   z-index: 1;
+   height: 450px;
+   width: 350px;
+   background-color: #f2f2f2;
+   opacity: 0.9;
+ filter: alpha(opacity=60);
+ border: 1px solid black;
+}
+
+.table1 {
+
+   border-collapse: separate;
+   border-spacing: 0px 0px;
+  font-size: 15px;
+  font-weight: bold;
+   width: 100%;
+}
+
+.radiotext {
+   margin: 5px 5px 0px 0px;
+}
+
+ 
+.aggpopup {
+   position: absolute;
+	font-size: 14px;
+	left: 35%;
+	top: 20%;
+	height: 450px;
+	width: 450px;
+	padding: 20px;
+	background-color: #f2f2f2;
+}
+.aggpopup *{
+	margin-top: 10px;
+}
