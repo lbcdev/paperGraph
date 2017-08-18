@@ -29,7 +29,6 @@
 <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.7.17/fabric.min.js"></script>
-
 <style>
 body {
    /*background: url("images/usmap1.jpg");*/
@@ -73,53 +72,6 @@ body {
 			Your browser does not support the HTML5 canvas tag.
 		</canvas>
 	</div>
-<script>
-
-var c = new fabric.Canvas('myCanvas');
-c.setHeight(500);
-c.setWidth(850);
-
-var c1, c2;
-var rds = 20;
-c1 = {left:100, top:200, color:'blue'};
-c2 = {left:300, top:400, color:'green'};
-c3 = {left:500, top:200, color:'gray'};
-// c1.left = 100;
-console.log(c2.left);
-
-var cl1 = new fabric.Circle({
-	radius: rds, fill: c1.color, left: c1.left, top: c1.top
-});
-
-var cl2 = new fabric.Circle({
-	radius: rds, fill: c2.color, left: c2.left, top: c2.top
-});
-
-var cl3 = new fabric.Circle({
-	radius: rds, fill: c3.color, left: c3.left, top: c3.top
-});
-
-var l1 = new fabric.Line([c1.left + rds,(c1.top + rds),c2.left+ rds,c2.top+ rds], {
-        stroke: 'black'
-});
-
-var l2 = new fabric.Line([c2.left + rds,(c2.top + rds),cl3.left+ rds,c3.top+ rds], {
-				stroke: 'black'});
-
-
-c.add(cl1, cl2, cl3, l1, l2);
-
-
-	// $(document).ready(function() {
-	//
-	// 	$(".popup").hide();
-	// 	$(".locater4").click(function(){
-	// 	$(".popup").show();
-	// 	});
-	// 	$("#btnclose").click(function(){
-	// 	$(".popup").hide();
-	// 	});
-	// });
-</script>
+	<script src="js/pg.js"></script>
 </body>
 </html>
