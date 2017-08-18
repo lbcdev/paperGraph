@@ -1,0 +1,24 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "case": "^1.4.1",
+    "cookie-parser": "^1.4.3",
+    "cookies": "^0.6.1",
+    "cors": "^2.7.1",
+    "ejs": "*",
+    "express": "^3.21.2",
+    "handle": "^1.0.0",
+    "ibm_db": "0.0.19",
+    "mongoose": "^4.5.2",
+    "morgan": "^1.7.0",
+    "python-shell": "^0.4.0",
+    "serve-favicon": "^2.3.0",
+    "socket.io": "^1.4.8"
+  }
+}

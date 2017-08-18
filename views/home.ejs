@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+
+<link rel="stylesheet" href="css/maps.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/graph.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link href="bootstrap.min.css" rel="stylesheet">
+<link href="dashboard.css" rel="stylesheet">
+<script src="jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="docs.min.js"></script>
+<script	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+
+<script
+	src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+<script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.3.js"></script>
+<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.7.17/fabric.min.js"></script>
+
+<style>
+body {
+   /*background: url("images/usmap1.jpg");*/
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+}
+</style>
+<title>Paper Graph</title>
+</head>
+<body>
+	<!-- header -->
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid header">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<img id="ibmicon"
+					src="https://www.kamber.com.au/wp-content/uploads/2013/09/1378900097_basic3-137_relations_graph_connections_structure.png" />
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-middle">
+					<li role="presentation" class="active hdtab"><a href="#">Home</a></li>
+					<li role="presentation"><a href="#">Design</a></li>
+					<!-- <li role="presentation"><a href="scan">Scan</a></li> -->
+					<li role="presentation"><a href="#">About</a></li>
+					<li>
+						<form class="navbar-form navbar-right">
+							<input type="text" class="form-control" placeholder="Search...">
+						</form>
+					<li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="main">
+		<canvas id="myCanvas" class="graphcanvas">
+			Your browser does not support the HTML5 canvas tag.
+		</canvas>
+	</div>
+<script>
+
+var c = new fabric.Canvas('myCanvas');
+c.setHeight(500);
+c.setWidth(850);
+
+var c1, c2;
+var rds = 20;
+c1 = {left:100, top:200, color:'blue'};
+c2 = {left:300, top:400, color:'green'};
+c3 = {left:500, top:200, color:'gray'};
+// c1.left = 100;
+console.log(c2.left);
+
+var cl1 = new fabric.Circle({
+	radius: rds, fill: c1.color, left: c1.left, top: c1.top
+});
+
+var cl2 = new fabric.Circle({
+	radius: rds, fill: c2.color, left: c2.left, top: c2.top
+});
+
+var cl3 = new fabric.Circle({
+	radius: rds, fill: c3.color, left: c3.left, top: c3.top
+});
+
+var l1 = new fabric.Line([c1.left + rds,(c1.top + rds),c2.left+ rds,c2.top+ rds], {
+        stroke: 'black'
+});
+
+var l2 = new fabric.Line([c2.left + rds,(c2.top + rds),cl3.left+ rds,c3.top+ rds], {
+				stroke: 'black'});
+
+
+c.add(cl1, cl2, cl3, l1, l2);
+
+
+	// $(document).ready(function() {
+	//
+	// 	$(".popup").hide();
+	// 	$(".locater4").click(function(){
+	// 	$(".popup").show();
+	// 	});
+	// 	$("#btnclose").click(function(){
+	// 	$(".popup").hide();
+	// 	});
+	// });
+</script>
+</body>
+</html>

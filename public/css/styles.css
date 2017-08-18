@@ -1,5 +1,5 @@
 
-/* 
+/*
 .param  {
 	display: flex;
 }
@@ -27,135 +27,135 @@ h4 {
 
 
 .h2 {
-  position: absolute; 
-   top: 185px; 
-   left: 170px; 
- 
+  position: absolute;
+   top: 185px;
+   left: 170px;
+
 }
-h2 span { 
-   color: white; 
-   font: bold 24px/45px Helvetica, Sans-Serif; 
-   letter-spacing: -1px;  
+h2 span {
+   color: white;
+   font: bold 24px/45px Helvetica, Sans-Serif;
+   letter-spacing: -1px;
    background: rgb(0, 0, 0); /* fallback color */
    background: rgba(0, 0, 0, 0.4);
-   padding: 10px; 
-   position: absolute; 
-   
-    top: 315px; 
-   left: 570px; 
+   padding: 10px;
+   position: absolute;
+
+    top: 315px;
+   left: 570px;
 }
 .h3 {
-  position: absolute; 
-   top: 210px; 
-   left: 130px; 
- 
+  position: absolute;
+   top: 210px;
+   left: 130px;
+
 }
-h3 span { 
-   color: white; 
-   font: bold 14px/15px Helvetica, Sans-Serif; 
-   letter-spacing: -1px;  
+h3 span {
+   color: white;
+   font: bold 14px/15px Helvetica, Sans-Serif;
+   letter-spacing: -1px;
    background: rgb(0, 0, 0); /* fallback color */
    background: rgba(0, 0, 0, 0.7);
-   padding: 5px; 
-   position: absolute; 
-   
-    top: 340px; 
-   left: 180px; 
+   padding: 5px;
+   position: absolute;
+
+    top: 340px;
+   left: 180px;
 }
 .h6 {
-  position: absolute; 
-   top: 210px; 
-   left: 1060px; 
- 
+  position: absolute;
+   top: 210px;
+   left: 1060px;
+
 }
-h6 span { 
-   color: white; 
-   font: bold 14px/15px Helvetica, Sans-Serif; 
-   letter-spacing: -1px;  
+h6 span {
+   color: white;
+   font: bold 14px/15px Helvetica, Sans-Serif;
+   letter-spacing: -1px;
    background: rgb(0, 0, 0); /* fallback color */
    background: rgba(0, 0, 0, 0.7);
-   padding: 5px; 
-   position: absolute; 
-   
-    top: 210px; 
-   left: 1100px; 
+   padding: 5px;
+   position: absolute;
+
+    top: 210px;
+   left: 1100px;
 }
 .h5 {
-  position: absolute; 
-   top: 210px; 
-   left: 1060px; 
- 
+  position: absolute;
+   top: 210px;
+   left: 1060px;
+
 }
-h5 span { 
-   color: white; 
-   font: bold 14px/15px Helvetica, Sans-Serif; 
-   letter-spacing: -1px;  
+h5 span {
+   color: white;
+   font: bold 14px/15px Helvetica, Sans-Serif;
+   letter-spacing: -1px;
    background: rgb(0, 0, 0); /* fallback color */
    background: rgba(0, 0, 0, 0.7);
-   padding: 5px; 
-   position: absolute; 
-   
-    top: 520px; 
-   left: 650px; 
+   padding: 5px;
+   position: absolute;
+
+    top: 520px;
+   left: 650px;
 }
 .h8 {
-  position: absolute; 
-   top: 185px; 
-   left: 670px; 
- 
+  position: absolute;
+   top: 185px;
+   left: 670px;
+
 }
- 
-h8 span { 
-   color: white; 
-   font: bold 14px/15px Helvetica, Sans-Serif; 
-   letter-spacing: -1px;  
+
+h8 span {
+   color: white;
+   font: bold 14px/15px Helvetica, Sans-Serif;
+   letter-spacing: -1px;
    background: rgb(0, 0, 0); /* fallback color */
    background: rgba(0, 0, 0, 0.7);
-   padding: 5px; 
-   position: absolute; 
-   
-    top: 315px; 
-   left: 830px; 
+   padding: 5px;
+   position: absolute;
+
+    top: 315px;
+   left: 830px;
 }
 
 .h7 {
-  position: absolute; 
-   top: 185px; 
-   left: px; 
- 
+  position: absolute;
+   top: 185px;
+   left: px;
+
 }
- 
-h7 span { 
-   color: white; 
-   font: bold 14px/15px Helvetica, Sans-Serif; 
-   letter-spacing: -1px;  
+
+h7 span {
+   color: white;
+   font: bold 14px/15px Helvetica, Sans-Serif;
+   letter-spacing: -1px;
    background: rgb(0, 0, 0); /* fallback color */
    background: rgba(0, 0, 0, 0.7);
-   padding: 5px; 
-   position: absolute; 
-   
-    top: 175px; 
-   left: 450px; 
+   padding: 5px;
+   position: absolute;
+
+    top: 175px;
+   left: 450px;
 }
 
 .h9 {
-  position: absolute; 
-   top: 185px; 
-   left: px; 
- 
+  position: absolute;
+   top: 185px;
+   left: px;
+
 }
- 
-h9 span { 
-   color: white; 
-   font: bold 14px/15px Helvetica, Sans-Serif; 
-   letter-spacing: -1px;  
+
+h9 span {
+   color: white;
+   font: bold 14px/15px Helvetica, Sans-Serif;
+   letter-spacing: -1px;
    background: rgb(0, 0, 0); /* fallback color */
    background: rgba(0, 0, 0, 0.7);
-   padding: 5px; 
-   position: absolute; 
-   
-    top: 155px; 
-   left: 750px; 
+   padding: 5px;
+   position: absolute;
+
+    top: 155px;
+   left: 750px;
 }
 .reddot{
 
@@ -255,7 +255,7 @@ position: relative;
 p {
 	font-size: 14px;
 }
-/* 
+/*
 #blur{
 	margin-left: auto;
 	margin-right: auto;
@@ -270,7 +270,11 @@ p {
 	position: relative;
 	left:22%;
 	font-size: 16px;
-}	
+}
+
+.header li{
+  padding-left: 20px;
+}
 
 
 .main{
@@ -280,7 +284,7 @@ p {
 	padding:0px;
 	width:65%;
 	height:100%;
-	background-color: #f2f2f2;
+	/*background-color: #f2f2f2;*/
 }
 
 .main * {
@@ -343,7 +347,7 @@ LEGEND{
 .bfscan:hover{
 	border:1px solid gray;
 	cursor: pointer;
-} 
+}
 .dataset *{
 	font-size: 12px;
 	margin: 0px;
@@ -351,7 +355,7 @@ LEGEND{
 	margin-top: 15px;
 }
 .dataset p{
-	margin: 5px;	
+	margin: 5px;
 }
 
 
@@ -371,7 +375,7 @@ LEGEND{
     cursor: pointer;
     border-radius: 5px;
     top : 5px;
-/* 
+/*
     left: 10px;
  */
     position: relative;
@@ -392,7 +396,7 @@ LEGEND{
     border-radius: 5px;
     top : 5px;
     left: -325px;
-    
+
     position: relative;
     text-align: center;
 }
@@ -409,7 +413,7 @@ LEGEND{
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
-    top : 5px;    
+    top : 5px;
     text-align: center;
 }
 
@@ -426,7 +430,7 @@ LEGEND{
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
-    top : 5px;    
+    top : 5px;
     text-align: center;
 }
 
@@ -442,7 +446,7 @@ LEGEND{
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
-    top : 5px;    
+    top : 5px;
     text-align: center;
 }
 
@@ -459,7 +463,7 @@ LEGEND{
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
-    top : 5px;    
+    top : 5px;
     text-align: center;
 }
 /* button styling */
@@ -468,7 +472,7 @@ LEGEND{
   display: inline-block;
   vertical-align: middle;
   margin: 10px; /* demo only */
-  
+
 }
 
 .custom-dropdown select {
@@ -476,7 +480,7 @@ LEGEND{
   color:  #fff;
   font-size: inherit;
   padding: .5em;
-  padding-right: 2.5em;	
+  padding-right: 2.5em;
   border: 0;
   margin: 0;
   border-radius: 3px;
@@ -485,7 +489,7 @@ LEGEND{
   opacity: 0.4;
     filter: alpha(opacity=50);
   -webkit-appearance: button; /* hide default arrow in chrome OSX */
- 
+
 }
 
 .custom-dropdown::before,
@@ -512,7 +516,7 @@ LEGEND{
   top: 0;
   bottom: 0;
   border-radius: 0 3px 3px 0;
-  
+
 }
 
 .custom-dropdown select[disabled] {
@@ -680,7 +684,7 @@ text-align: center;
    margin: 5px 5px 0px 0px;
 }
 
- 
+
 .aggpopup {
    position: absolute;
 	font-size: 14px;
