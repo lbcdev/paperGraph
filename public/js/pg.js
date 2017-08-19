@@ -7,17 +7,24 @@ $("#btnclose").click(function() {
   $(".popup").hide();
 });
 
-var rds = 10;
-var c = new fabric.Canvas('myCanvas');
-c.setHeight(500);
-c.setWidth(850);
+$("#btngen").click(function() {
+    var nvert = $("#nvert").val();
+    var nedge = $("#nedge").val();
+    console.log(nvert);
+    V = genVertices(nvert);
+    E = genEdges(V, nedge);
+    drawGraph(V, E);
+});
 
-V = genVertices(20);
-E = genEdges(V, 50);
-drawGraph(V, E);
+var rds = 10;
+
+
 
 /* drawing method for the graph. */
 function drawGraph(v, e){
+  var c = new fabric.Canvas('myCanvas');
+  c.setHeight(500);
+  c.setWidth(850);
   // draw vertices.
   v.forEach(function(item){
     c.add(item);
@@ -27,8 +34,8 @@ function drawGraph(v, e){
   e.forEach(function(item){
     var s = V[item.split(",")[0]];
     var d = V[item.split(",")[1]];
-    console.log("src: " + s.left);
-    console.log("dst: " + d.left);
+    // console.log("src: " + s.left);
+    // console.log("dst: " + d.left);
     var color = '#' + (function co(lor){ return (lor += [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)])
   && (lor.length == 6) ?  lor : co(lor); })('');
     var ln = new fabric.Line([s.left + rds,(s.top + rds),d.left+ rds,d.top+ rds], {
@@ -62,7 +69,6 @@ function genEdges(V, num){
     var d = Math.floor((Math.random() * V.length));
     var path = s + "," + d;
     e.push(path);
-    console.log(path);
     loopcount = loopcount - 1;
   }
   return e;
