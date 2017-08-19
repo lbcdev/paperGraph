@@ -1,10 +1,20 @@
+
+$(".popup").hide();
+$(".locater4").click(function() {
+  $(".popup").show();
+});
+$("#btnclose").click(function() {
+  $(".popup").hide();
+});
+
+
 var c = new fabric.Canvas('myCanvas');
 c.setHeight(500);
 c.setWidth(850);
 
 var c1, c2;
-var rds = 20;
-c1 = {left:100, top:200, color:'blue'};
+var rds = 15;
+c1 = {left:100, top:200, color: '#093098'};
 c2 = {left:300, top:400, color:'green'};
 c3 = {left:500, top:200, color:'gray'};
 // c1.left = 100;
@@ -39,7 +49,9 @@ e.push('0,1');
 e.push('2,1');
 //c.add(cl1, cl2, cl3, l1, l2);
 
-drawGraph(V, e);
+V = genVertices(20);
+E = genEdges(V, 50);
+drawGraph(V, E);
 
 /* drawing method for the graph. */
 function drawGraph(v, e){
@@ -58,4 +70,35 @@ function drawGraph(v, e){
     				stroke: 'black'});
     c.add(ln);
   });
+}
+
+function genVertices (num){
+  var V = new Array();
+  var i;
+  for(i = 0; i < num; i++){
+    var left = Math.floor((Math.random() * 500) + 100);
+    var top = Math.floor((Math.random() * 300) + 100);
+    // var color = "#" + Math.floor((Math.random() * 200000) + 100000);
+    var color = '#' + (function co(lor){ return (lor += [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)])
+  && (lor.length == 6) ?  lor : co(lor); })('');
+
+    var c = new fabric.Circle({
+    	radius: rds, fill: color, left: left, top: top
+    });    V.push(c);
+  }
+  return V;
+}
+
+function genEdges(V, num){
+  var loopcount = Math.min(V.length * V.length, num);
+  var e = new Array();
+  while(loopcount>0){
+    var s = Math.floor((Math.random() * V.length));
+    var d = Math.floor((Math.random() * V.length));
+    var path = s + "," + d;
+    e.push(path);
+    console.log(path);
+    loopcount = loopcount - 1;
+  }
+  return e;
 }
